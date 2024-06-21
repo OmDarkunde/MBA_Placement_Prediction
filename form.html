@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <style>
+        body {
+            background-image: url('./campus.jpg');
+            background-size: cover;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white; /* Adjust the text color for better visibility */
+        }
+        form {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .btn:hover {background-color: #3e8e41}
+
+        .btn:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: rgb(18, 18, 18); color: #FEB941;
+    text-shadow: 2px 2px 4px #000000; font-size: 3rem; margin-left: 32rem;">placement prediction</h2>
+    <form action="/submit" method="post">
+        <label for="gender">Gender:</label>
+        <select style="background-color: #8B93FF;" id="gender" name="gender">
+            <option style="background-color: #8B93FF;" value="Male">Male</option>
+            <option style="background-color: #8B93FF;" value="Female">Female</option>
+        </select>
+
+        <label for="ssc_p">SSC Percentage:</label>
+        <input style="background-color: #CDE8E5;" style="background-color: #CDE8E5;" type="text" id="ssc_p" name="ssc_p">
+
+        <label for="ssc_b">SSC Board:</label>
+        <select style="background-color: #8B93FF;" id="ssc_b" name="ssc_b">
+            <option value="Central">Central</option>
+            <option value="Others">Others</option>
+        </select>
+
+        <label for="hsc_p">HSC Percentage:</label>
+        <input style="background-color: #CDE8E5;" type="text" id="hsc_p" name="hsc_p">
+
+        <label for="hsc_b">HSC Board:</label>
+        <select style="background-color: #8B93FF;" id="hsc_b" name="hsc_b">
+            <option value="Central">Central</option>
+            <option value="Others">Others</option>
+        </select>
+
+        <label for="hsc_s">HSC Stream:</label>
+        <select style="background-color: #8B93FF;" id="hsc_s" name="hsc_s">
+            <option value="Science">Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Arts">Arts</option>
+        </select>
+
+        <label for="degree_p">Degree Percentage:</label>
+        <input style="background-color: #CDE8E5;" type="text" id="degree_p" name="degree_p">
+
+        <label for="degree_t">Degree Type:</label>
+        <select style="background-color: #8B93FF;" id="degree_t" name="degree_t">
+            <option value="Sci&Tech">Sci&Tech</option>
+            <option value="Comm&Mgmt">Comm&Mgmt</option>
+            <option value="Others">Others</option>
+        </select>
+
+        <label for="workex">Work Experience:</label>
+        <select style="background-color: #8B93FF;" id="workex" name="workex">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="etest_p">E-test Percentage:</label>
+        <input style="background-color: #CDE8E5;" type="text" id="etest_p" name="etest_p">
+
+        <label for="specialisation">Specialisation:</label>
+        <select style="background-color: #8B93FF;" id="specialisation" name="specialisation">
+            <option value="Mkt&HR">Mkt&HR</option>
+            <option value="Mkt&Fin">Mkt&Fin</option>
+        </select>
+
+        <label for="mba_p">MBA Percentage:</label>
+        <input style="background-color: #CDE8E5;" type="text" id="mba_p" name="mba_p">
+
+        <label for="status">Status:</label>
+        <input style="background-color: #CDE8E5;" type="text" id="status" name="status">
+
+        <input style=" height: 2.5rem; width: 6rem; margin: auto; border-radius: 0.5rem; " class="btn" type="submit" value="Submit">
+    </form>
+</body>
+</html>
