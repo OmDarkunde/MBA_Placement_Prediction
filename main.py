@@ -150,7 +150,7 @@ custom_css = """
 st.markdown(f'<style>{custom_css}</style>', unsafe_allow_html=True)
 
 # Title
-st.markdown("<h2>Placement Prediction</h2>", unsafe_allow_html=True)
+st.markdown("<h2>MBA Placement Prediction</h2>", unsafe_allow_html=True)
 
 # Form
 with st.form(key='student_info_form', clear_on_submit=True):
