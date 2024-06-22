@@ -7,7 +7,7 @@ pip install -r requirements.txt
 
 ### to run the project 
 ```
-streamlir run main.py
+streamlit run main.py
 ```
 
 ### link for the data set 
